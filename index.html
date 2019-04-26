@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+</head>
 <style>
 body, html {
   height: 100%;
@@ -13,7 +16,7 @@ body, html {
   background-size: cover;
   position: relative;
   color: rgb(206, 206, 206);
-  font-family: "Verdana";
+  font-family: 'Lobster Two', cursive;
   font-size: 25px;
 }
 
@@ -51,14 +54,14 @@ hr {
     <p></p>
   </div>
   <div class="middle">
-    <p>
-        <font size="8"><strong>You Are Cordially Invited</strong></font>
-    </p>
-    <p>
-        <font size="5">04 08 2019 - Boston MA</font>
-    </p>
+    <div style="font-size:2.5vw">You Are Cordially Invited To</div>
+    <div style="font-size:7vw">A Fo-Fancy Night</div>
+    <br>
+    <div style="font-size:1.5vw">06 03 2019   -   75 Station Landing</div>
+    <br>
     <hr>
-    <p id="demo" style="font-size:50px"></p>
+    <br>
+    <div id="demo" style="font-size:6vw"></div>
   </div>
   <div class="bottomleft">
     <p></p>
@@ -67,7 +70,7 @@ hr {
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("March 8, 2019 23:59:59").getTime();
+var countDownDate = new Date("June 3, 2019 23:59:59").getTime();
 
 // Update the count down every 1 second
 var countdownfunction = setInterval(function() {
@@ -85,8 +88,8 @@ var countdownfunction = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + " " + hours + " "
-  + minutes + " " + seconds + " ";
+  document.getElementById("demo").innerHTML = days + "  " + hours + "  "
+  + minutes + "  " + seconds + "  ";
   
   // If the count down is over, write some text 
   if (distance < 0) {
